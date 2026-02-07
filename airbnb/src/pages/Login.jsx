@@ -12,10 +12,6 @@ const Login = () => {
               flex items-center justify-center  flex-col
               md:items-start gap-[10px]'>
                 <h1 className='text-[30px] text-[black]'>Welcome to Airbnb</h1>
-                <div className='w-[90%] flex items-start justify-start flex-col gap-[10px] mt-[30px]'>
-                <label htmlfor="name" className='text-[20px]'>UserName</label>
-                <input type="text" id='name'className='w-[90%] h-[40px] border-[2px] border-[gray] rounded-lg text-[18px] px-[20px]' />
-                </div>
                 <div className='w-[90%] flex items-start justify-start flex-col gap-[10px]'>
                 <label htmlfor="email"  className='text-[20px]'>Email</label>
                 <input type="text" id='Email' className='w-[90%] h-[40px] border-[2px] border-[gray] rounded-lg text-[18px] px-[20px]'/>

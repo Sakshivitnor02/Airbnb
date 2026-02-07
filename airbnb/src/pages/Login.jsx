@@ -28,7 +28,7 @@ const Login = () => {
                 </div>
                 <button className='px-[50px] py-[10px] bg-[red] text-[white] text-[18px] md:px-[100px] rounded-lg'>Login</button>
                 <p className='text-[18px]'>Create New Account <span className='text-[19px] text-[red] cursor-pointer' onClick={()=>navigate("/signup")}>SignUp</span></p>
-        </form>
+              </form>
               
            
           </div>

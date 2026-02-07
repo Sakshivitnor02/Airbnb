@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import { FaEye } from "react-icons/fa6";
 import { IoEyeOff } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
       let[show,setShow] = useState(false)
+      let navigate = useNavigate()
     
   return (
     <div>
@@ -29,7 +31,8 @@ const SignUp = () => {
           {show && <IoEyeOff className='w-[22px] h-[22px] absolute right-[12%] bottom-[10px] cursor-pointer'
           onClick={()=>setShow(prev =>!prev)}/>}
           </div>
-          <button className='px-[50px] py-[10px] bg-[red] text-[white] text-[18px] md:px-[100px] rounded-lg'>SignUp</button>
+          <button className='px-[50px] py-[10px] bg-[red] text-[white] text-[18px] md:px-[100px] rounded-lg mt-[20px]'>SignUp</button>
+          <p className='text-[18px]'>Already have a account? <span className='text-[19px] text-[red] cursor-pointer' onClick={()=>navigate("/login")}>Login</span></p>
         </form>
      
     </div>
